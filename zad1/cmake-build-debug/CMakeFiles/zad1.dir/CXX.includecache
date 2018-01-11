@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/olga/Pulpit/git_workshop/repo/warsztaty_github/zad1/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+cstring
+-
+
