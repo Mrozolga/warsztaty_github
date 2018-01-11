@@ -1,9 +1,9 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <cstring>
 #include <string>
 #include <sstream>
+
 
 int main() {
     std::fstream plik;
@@ -11,13 +11,13 @@ int main() {
     std::string dane;
     std::vector<long long> cyfry;
     std::vector<char> znak;
+
     long long a, wynik = 0;
     plik.open("in1.txt", std::ios::in | std::ios::out);
     out.open("out1.txt", std::ios::out);
     while (plik.good() == true) {
         getline(plik, dane);
-
-        a = stoll(dane);
+        a = std::stoll(dane);
         if (dane == "==") {
             return 0;
         } else if (a <= 9 && a >= 0) cyfry.push_back(a);
